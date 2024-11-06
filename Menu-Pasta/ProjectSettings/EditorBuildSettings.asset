@@ -8,6 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Maya.unity
+    guid: 02bb204f9832c0142a1b44b232262536
+  - enabled: 1
+    path: Assets/Scenes/Ikea.unity
+    guid: 64ec8a7edbf016443ae71ec66756e065
+  - enabled: 1
+    path: Assets/Scenes/Mexico.unity
+    guid: c641658e027b14e4989a05f45249ddc5
+  - enabled: 1
+    path: Assets/Scenes/Tesco.unity
+    guid: ad5aa4ae15ec7814a871aeef0fec8297
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 2c575c552df62b149828bf81e2214c88, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

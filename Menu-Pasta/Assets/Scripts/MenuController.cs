@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Localization.Settings;
+using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
@@ -41,10 +42,31 @@ public class MenuController : MonoBehaviour
     //Language drop-down menu
     
     [SerializeField] private TMP_Dropdown languageDropdown;
-
+    private string _languageString;
+    private int pickedLanguage;
+    
     public void ChangeLanguage()
     {
-        int pickedLanguage = languageDropdown.value;
+        pickedLanguage = languageDropdown.value;
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[pickedLanguage];
+        LoadScene();
+        
+        
+    }
+
+    public void LoadScene()
+    {
+        if (pickedLanguage == 0)
+        { SceneManager.LoadScene("Tesco"); }
+        
+        else if (pickedLanguage == 1)
+        { SceneManager.LoadScene("Main"); }
+        
+        else if (pickedLanguage == 2)
+        { SceneManager.LoadScene("Mexico");}
+        
+        else if (pickedLanguage == 3)
+        {
+            SceneManager.LoadScene("Ikea");}
     }
 }
