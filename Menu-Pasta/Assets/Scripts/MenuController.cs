@@ -1,6 +1,10 @@
+using System.Collections;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using UnityEngine.Localization.Settings;
+
 public class MenuController : MonoBehaviour
 {
     private int _language;
@@ -32,5 +36,15 @@ public class MenuController : MonoBehaviour
 #else
         Application.Quit()
 #endif
+    }
+    
+    //Language drop-down menu
+    
+    [SerializeField] private TMP_Dropdown languageDropdown;
+
+    public void ChangeLanguage()
+    {
+        int pickedLanguage = languageDropdown.value;
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[pickedLanguage];
     }
 }

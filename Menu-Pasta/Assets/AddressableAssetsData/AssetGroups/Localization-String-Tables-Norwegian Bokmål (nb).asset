@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: "Localization-String-Tables-Norwegian Bokm\xE5l (nb)"
+  m_EditorClassIdentifier: 
+  m_GroupName: "Localization-String-Tables-Norwegian Bokm\xE5l (nb)"
+  m_GUID: 3f876baaf28ec5340a9d12faad17ce3a
+  m_SerializeEntries:
+  - m_GUID: 9f915137766272d49ad7fcef48500ed1
+    m_Address: Settings_nb
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-nb
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 63dc5227e0b258947b850ecf6b2f0c98, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: baa41590cd53bc84ab1e8e18cdc690c4, type: 2}
+    - {fileID: 11400000, guid: 59d71f1c147d716448f787b892475469, type: 2}
