@@ -46,6 +46,22 @@ MonoBehaviour:
     m_Localized: Let's make pasta!
     m_Metadata:
       m_Items: []
+  - m_Id: 370557249544192
+    m_Localized: Norwegian
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370794198360064
+    m_Localized: English (UK)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 371201993760768
+    m_Localized: Spanish (Mexico)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 371401722322944
+    m_Localized: Swedish
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

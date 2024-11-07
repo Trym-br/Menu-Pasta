@@ -35,15 +35,31 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1942906101760
-    m_Localized: "Contin\xFAe"
+    m_Localized: Continuar
     m_Metadata:
       m_Items: []
   - m_Id: 1961570754560
-    m_Localized: Deje (?)
+    m_Localized: Salir
     m_Metadata:
       m_Items: []
   - m_Id: 312457385631744
     m_Localized: "\xA1Hagamos pasta!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370557249544192
+    m_Localized: Noruego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370794198360064
+    m_Localized: "\xCDngles (Reino Unido)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 371201993760768
+    m_Localized: "Espa\xF1ol (M\xE9xico)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 371401722322944
+    m_Localized: Sueco
     m_Metadata:
       m_Items: []
   references:

@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 99073286144
-    m_Localized: "inst\xE4llningar"
+    m_Localized: "Inst\xE4llningar"
     m_Metadata:
       m_Items: []
   - m_Id: 1886123614208
@@ -44,6 +44,22 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 312457385631744
     m_Localized: "L\xE5t oss laga pasta!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370557249544192
+    m_Localized: Norsk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370794198360064
+    m_Localized: Engelska (UK)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 371201993760768
+    m_Localized: Spanska (Mexiko)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 371401722322944
+    m_Localized: Svenska
     m_Metadata:
       m_Items: []
   references:

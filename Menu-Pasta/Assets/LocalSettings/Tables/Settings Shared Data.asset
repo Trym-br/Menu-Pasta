@@ -43,6 +43,22 @@ MonoBehaviour:
     m_Key: Let's make pasta!
     m_Metadata:
       m_Items: []
+  - m_Id: 370557249544192
+    m_Key: Norwegian
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370794198360064
+    m_Key: English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 371201993760768
+    m_Key: Spanish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 371401722322944
+    m_Key: Swedish
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
