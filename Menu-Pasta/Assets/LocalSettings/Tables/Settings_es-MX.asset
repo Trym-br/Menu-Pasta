@@ -42,6 +42,10 @@ MonoBehaviour:
     m_Localized: Deje (?)
     m_Metadata:
       m_Items: []
+  - m_Id: 312457385631744
+    m_Localized: "\xA1Hagamos pasta!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
