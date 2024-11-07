@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEditor;
 using UnityEngine;
@@ -12,12 +13,21 @@ public class MenuController : MonoBehaviour
     public GameObject dropdown;
 
     public GameObject menu;
+    private SpriteRenderer _spriteRenderer;
+
+    private void Start()
+    {
+        _spriteRenderer = shadow.GetComponent<SpriteRenderer>();
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !menu.activeInHierarchy)
         {
             OpenMenu();
         }
+        
+        
     }
 
     void OpenMenu()
@@ -69,4 +79,21 @@ public class MenuController : MonoBehaviour
         {
             SceneManager.LoadScene("Ikea");}
     }
+    
+    //Sliders
+    
+    //Brightness
+    public Slider brightnessSlider;
+    public GameObject shadow;
+
+    public void ChangeBrightness()
+    {
+        print("changed Brightness to"+ brightnessSlider.value);
+        float brightness = 1 - brightnessSlider.value;
+        _spriteRenderer.color = new Color(0, 0, 0, brightness);
+    }
+    
+
+
+
 }
