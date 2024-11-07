@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tescoBackgroundSketch_0: -1915212538544887679
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

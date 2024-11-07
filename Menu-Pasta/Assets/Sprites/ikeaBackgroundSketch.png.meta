@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ikeaBackgroundSketch_0: -3965369447939479311
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
