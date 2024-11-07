@@ -347,6 +347,10 @@ PrefabInstance:
       propertyPath: m_Value
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2029217151994081846, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2321928328404857040, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -427,13 +431,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2795888692181731547, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2821606525745312612, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1321269409}
+    - target: {fileID: 3414356783269473184, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_text
+      value: English (UK)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473694869641335391, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4830201680947042990, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859106726091547837, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859106726091547837, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859106726091547837, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859106726091547837, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4921132643106272181, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035841227031092309, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
