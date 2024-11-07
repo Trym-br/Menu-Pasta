@@ -57,12 +57,14 @@ public class ItemManager : MonoBehaviour
             string currentSceneName = SceneManager.GetActiveScene().name;
             if (currentSceneName == itemControllers[i]._incurrentSceneName)
             {
-                items[i].SetActive(true);
+                // items[i].SetActive(true);
+                itemControllers[i].HideOrShow(true);
                 Debug.Log(items[i].name + ": Activated");
             }
             else
             {
-                items[i].SetActive(false);
+                // items[i].SetActive(false);
+                itemControllers[i].HideOrShow(false);
                 Debug.Log(items[i].name + ": Deactivated");
             }
         }
