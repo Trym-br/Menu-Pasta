@@ -251,8 +251,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  _boxCollider2D: {fileID: 5796144684114265866}
   _incurrentSceneName: Trym
-  _putInPotClip: {fileID: 0}
   _state: Unobtained
   draggable: 1
   shrinkDuration: 2

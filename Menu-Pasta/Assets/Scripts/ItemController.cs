@@ -2,16 +2,17 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class ItemController : MonoBehaviour
 {
     public Animator _animator;
     public SpriteRenderer _spriteRenderer;
-    private BoxCollider2D _boxCollider2D;
     [SerializeField] private AnimationCurve shrinkCurve;
-    public string _incurrentSceneName;
     
-    [SerializeField] private AnimationClip _putInPotClip;
+    [SerializeField] private BoxCollider2D _boxCollider2D;
+    
+    public string _incurrentSceneName;
     
     public string _state = "Unobtained";
     // Unobtained: in original location
@@ -19,7 +20,7 @@ public class ItemController : MonoBehaviour
     // Used: in oven
     [SerializeField] private bool draggable;
 
-    private void Awake() { DontDestroyOnLoad(this.gameObject); }
+    private void Awake() { DontDestroyOnLoad(this.gameObject); HideOrShow(false); }
     private void Start()
     {
         _animator = GetComponent<Animator>();
@@ -48,15 +49,18 @@ public class ItemController : MonoBehaviour
             // _animator.SetTrigger("Oven");
             // StartCoroutine(PickupAnimCallback());
             Debug.Log(this.name + "moved to scene Trym 2");
-            _incurrentSceneName = "Trym 2";
+            _incurrentSceneName = "Main";
+            ItemManager.Instance.UpdateBackground(this.tag);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log(this.name + "entered " + other.name);
-        if (other.gameObject.CompareTag("Oven") && this.tag != "Oven")
+        Debug.Log("tags of collision: " + other.gameObject.tag + " / " + this.tag);
+        if (other.gameObject.CompareTag("Oven") && this.tag != "Oven" && _state == "Obtained")
         {
+            Debug.Log(this.name + ": put in oven");
             _animator.SetBool("PutInPot", true);
             _state = "Used";
             ItemManager.Instance.OvenStateUpdate();

@@ -6,7 +6,8 @@ using System.Collections.Generic;
 public class ItemManager : MonoBehaviour
 {
     public static ItemManager Instance { get; private set; }
-    public GameObject[] items; 
+    public GameObject[] items;
+    public Sprite[] backgrounds;
     private List<ItemController> itemControllers = new List<ItemController>();
 
     private void Awake()
@@ -87,6 +88,22 @@ public class ItemManager : MonoBehaviour
         {
             // Oven._spriteRenderer.sprite = 
             Debug.Log("Ovenstate: Pasta");
+        }
+    }
+    public void UpdateBackground(string itemtag)
+    {
+        GameObject background = GameObject.Find("Background");
+        switch (itemtag)
+        {
+            case "Oven": 
+                background.GetComponent<SpriteRenderer>().sprite = backgrounds[0];
+                break;
+            case "Tomat": 
+                background.GetComponent<SpriteRenderer>().sprite = backgrounds[1];
+                break;
+            case "Pasta": 
+                // background.GetComponent<SpriteRenderer>().sprite = backgrounds[2];
+                break;
         }
     }
 }

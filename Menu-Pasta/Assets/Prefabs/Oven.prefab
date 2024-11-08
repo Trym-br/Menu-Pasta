@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7127728195541354359}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0.03, y: -1.77, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 7482667652216324306, guid: b0b8af3fb7ad52d41aa22c674c1780eb, type: 3}
+  m_Sprite: {fileID: -7072883587210774579, guid: f5a730ca0b9401649b5ac193d69d453c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -151,13 +151,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2.8, y: 2.6666667}
     newSize: {x: 9.18, y: 5.15}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.9, y: 2.8}
   m_EdgeRadius: 0
 --- !u!50 &6463807315691466576
 Rigidbody2D:
@@ -251,8 +251,12 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _incurrentSceneName: Trym
   _putInPotClip: {fileID: 0}
+  _boxCollider2D: {fileID: 9202135839558687443}
+  _incurrentSceneName: Ikea
+  PickupEvent:
+    m_PersistentCalls:
+      m_Calls: []
   _state: Unobtained
   draggable: 0
   shrinkDuration: 2
