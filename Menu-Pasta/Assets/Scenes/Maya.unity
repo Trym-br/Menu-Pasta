@@ -939,20 +939,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 209489136667731714, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_Options.m_Options.Array.data[2].m_Text
-      value: Svenska
+      value: "Espa\xF1ol (M\xE9xico)"
       objectReference: {fileID: 0}
     - target: {fileID: 209489136667731714, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_Options.m_Options.Array.data[3].m_Text
-      value: "Espa\xF1ol (M\xE9xico)"
+      value: Svenska
       objectReference: {fileID: 0}
     - target: {fileID: 209489136667731714, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_Options.m_Options.Array.data[2].m_Image
       value: 
-      objectReference: {fileID: 21300000, guid: 1363176ccd9d8464bada378c094e1636, type: 3}
+      objectReference: {fileID: 21300000, guid: cb17e67ba4cd1e24499dfecd0c35c059, type: 3}
     - target: {fileID: 209489136667731714, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_Options.m_Options.Array.data[3].m_Image
       value: 
-      objectReference: {fileID: 21300000, guid: cb17e67ba4cd1e24499dfecd0c35c059, type: 3}
+      objectReference: {fileID: 21300000, guid: 1363176ccd9d8464bada378c094e1636, type: 3}
     - target: {fileID: 2321928328404857040, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_Pivot.x
       value: 0

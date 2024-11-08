@@ -14,14 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: Localization-String-Tables-Norwegian Nynorsk (nn)
   m_GUID: b08596c944cc3304d9d8f72c4b165407
-  m_SerializeEntries:
-  - m_GUID: 8391df68aa3e09e46916b445826fef34
-    m_Address: Settings_nn
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-nn
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 63dc5227e0b258947b850ecf6b2f0c98, type: 2}
   m_SchemaSet:

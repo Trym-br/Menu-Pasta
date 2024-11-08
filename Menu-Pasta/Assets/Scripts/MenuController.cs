@@ -114,10 +114,10 @@ public class MenuController : MonoBehaviour
         }*/
          
         else if (_pickedLanguage == 2)
-        { SceneManager.LoadScene("Ikea");}
+        { SceneManager.LoadScene("Mexico");}
         
         else if (_pickedLanguage == 3)
-        { SceneManager.LoadScene("Mexico");}
+        { SceneManager.LoadScene("Ikea");}
     }
     
     [Header("Brightness Settings")]
