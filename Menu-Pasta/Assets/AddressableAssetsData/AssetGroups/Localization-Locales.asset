@@ -39,6 +39,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c6cf1315da7eab94389b46986b2060f9
+    m_Address: Norwegian Nynorsk (nn)
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 63dc5227e0b258947b850ecf6b2f0c98, type: 2}
   m_SchemaSet:

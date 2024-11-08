@@ -27,6 +27,11 @@ public class MenuController : MonoBehaviour
             ChangeVolume();
         }
 
+        if (PlayerPrefs.HasKey("Language"))
+        {
+            languageDropdown.value = PlayerPrefs.GetInt("Language");
+        }
+
         _spriteRenderer = shadow.GetComponent<SpriteRenderer>();
     }
     
@@ -78,6 +83,7 @@ public class MenuController : MonoBehaviour
     {
         _pickedLanguage = languageDropdown.value;
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[_pickedLanguage];
+        PlayerPrefs.SetInt("Language", _pickedLanguage);
         LoadScene();
         
         
@@ -95,10 +101,10 @@ public class MenuController : MonoBehaviour
             SceneManager.LoadScene("Main");
         }
         
-        else if (_pickedLanguage == 2)
+        else if (_pickedLanguage == 3)
         { SceneManager.LoadScene("Mexico");}
         
-        else if (_pickedLanguage == 3)
+        else if (_pickedLanguage == 4)
         { SceneManager.LoadScene("Ikea");}
     }
     
