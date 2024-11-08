@@ -3,26 +3,30 @@ using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
+    [Header("Audio Sources")]
     [SerializeField] private AudioSource ambienceSource;
     [SerializeField] private AudioSource sfxSource;
-
+    
+    [Header("Ambience")]
     public AudioClip mainBackground;
     public AudioClip tescoBackground;
     public AudioClip ikeaBackground;
     public AudioClip mexicoBackground;
     
+    [Header("SFX")]
     public AudioClip click;
-    public AudioClip tomatoSplat;
-    public AudioClip pastaCooking;
+    public AudioClip tomatoDrop;
+    public AudioClip pastaDrop;
+    public AudioClip waterBoiling;
 
     private void Start()
     {
-        Scene currentScene = SceneManager.GetActiveScene ();
+        Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
-        if (sceneName == "Main")
+        if (sceneName == "Main" || sceneName == "Maya")
         {
-        ambienceSource.clip = mainBackground;
+            ambienceSource.clip = mainBackground;
         }
         else if (sceneName == "Tesco")
         {
@@ -36,6 +40,7 @@ public class AudioManager : MonoBehaviour
         {
             ambienceSource.clip = mexicoBackground;
         }
+
         ambienceSource.Play();
     }
 

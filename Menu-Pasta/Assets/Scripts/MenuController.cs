@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -11,23 +8,17 @@ using UnityEngine.Audio;
 
 public class MenuController : MonoBehaviour
 {
-    [Header("Test")]
-    private int _language;
-    public GameObject dropdown;
-
-    public GameObject menu;
     private SpriteRenderer _spriteRenderer;
-
-    private AudioManager audioManager;
+    private AudioManager _audioManager;
 
     private void Awake()
     {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        _audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     
     private void Start()
     {
-        if (PlayerPrefs.HasKey("MasterVolume")) //beholder volumet fra andre scener
+        if (PlayerPrefs.HasKey("MasterVolume")) //beholder volumvalg fra tidligere scener
         {
             LoadVolume();
         }
@@ -39,6 +30,9 @@ public class MenuController : MonoBehaviour
         _spriteRenderer = shadow.GetComponent<SpriteRenderer>();
     }
     
+    [Header("Menu Objects")]
+    public GameObject dropdown;
+    public GameObject menu;
 
     void Update()
     {
@@ -50,19 +44,17 @@ public class MenuController : MonoBehaviour
         {
             CloseMenu();
         }
-        
-        
     }
 
     public void OpenMenu()
     {
-        audioManager.PlaySFX(audioManager.click);
+        _audioManager.PlaySFX(_audioManager.click);
         menu.SetActive(true);
     }
 
     public void CloseMenu()
     {
-        audioManager.PlaySFX(audioManager.click);
+        _audioManager.PlaySFX(_audioManager.click);
         menu.SetActive(false);
     }
     
@@ -75,11 +67,12 @@ public class MenuController : MonoBehaviour
 #endif
     }
     
-    //Language drop-down menu
+    [Header("Language Settings")]
     
     [SerializeField] private TMP_Dropdown languageDropdown;
     private string _languageString;
     private int _pickedLanguage;
+    private int _language;
     
     public void ChangeLanguage()
     {
@@ -90,7 +83,7 @@ public class MenuController : MonoBehaviour
         
     }
 
-    public void LoadScene()
+    private void LoadScene()
     {
         if (_pickedLanguage == 0)
         {
@@ -109,19 +102,17 @@ public class MenuController : MonoBehaviour
         { SceneManager.LoadScene("Ikea");}
     }
     
-    //Sliders
-    
-    //Brightness
+    [Header("Brightness Settings")]
     public Slider brightnessSlider;
     public GameObject shadow;
 
     public void ChangeBrightness()
     {
         float brightness = 1 - brightnessSlider.value;
-        _spriteRenderer.color = new Color(0, 0, 0, brightness);
+        _spriteRenderer.color = new Color(0, 0, 0, brightness); //endrer opacity på skyggeboksen
     }
     
-    //volume
+    [Header("Audio Settings")]
     [SerializeField] private AudioMixer audioMixer;
     [SerializeField] private Slider volumeSlider;
 

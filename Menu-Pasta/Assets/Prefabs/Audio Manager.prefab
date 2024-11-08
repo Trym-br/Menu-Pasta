@@ -48,13 +48,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ambienceSource: {fileID: 7530062006389696106}
   sfxSource: {fileID: 2496506388028760450}
-  mainBackground: {fileID: 0}
+  mainBackground: {fileID: 8300000, guid: ad6b97f61380ddf47b1a922e95e09ee8, type: 3}
   tescoBackground: {fileID: 8300000, guid: bff59b91738f6724d88365bd1f82d4dc, type: 3}
   ikeaBackground: {fileID: 8300000, guid: da7539298e668ea4ea98236ae6de4a86, type: 3}
   mexicoBackground: {fileID: 8300000, guid: 6e13898620517ea48b9c9b13e96aca86, type: 3}
   click: {fileID: 8300000, guid: 0aec75b6bd0858047b0dc0c2537e77aa, type: 3}
-  tomatoSplat: {fileID: 0}
-  pastaCooking: {fileID: 0}
+  tomatoDrop: {fileID: 8300000, guid: 2dbe48940ea79814985802d20e15511f, type: 3}
+  pastaDrop: {fileID: 8300000, guid: 0ef2f6f9ea6e3b243aa8c8308ee6bd36, type: 3}
+  waterBoiling: {fileID: 8300000, guid: ddcb726a2c2620548b122013511fba4f, type: 3}
 --- !u!1 &6337556991880294969
 GameObject:
   m_ObjectHideFlags: 0
