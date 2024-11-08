@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class ItemController : MonoBehaviour
 {
-    private Animator _animator;
-    private SpriteRenderer _spriteRenderer;
+    public Animator _animator;
+    public SpriteRenderer _spriteRenderer;
     private BoxCollider2D _boxCollider2D;
     [SerializeField] private AnimationCurve shrinkCurve;
     public string _incurrentSceneName;
     
+    [SerializeField] private AnimationClip _putInPotClip;
     
     public string _state = "Unobtained";
     // Unobtained: in original location
@@ -31,7 +32,9 @@ public class ItemController : MonoBehaviour
         // _state == Obtained, unobtained is just for debug
         if (draggable && _state == "Obtained")
         {
-            this.transform.position = GetMouseWorldPosition();
+            // preserve z of editor
+            Vector3 mousePosition = GetMouseWorldPosition();
+            this.transform.position = new Vector3(mousePosition.x, mousePosition.y, this.transform.position.z);
         }
     }
 
@@ -48,6 +51,20 @@ public class ItemController : MonoBehaviour
             _incurrentSceneName = "Trym 2";
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log(this.name + "entered " + other.name);
+        if (other.gameObject.CompareTag("Oven") && this.tag != "Oven")
+        {
+            _animator.SetBool("PutInPot", true);
+            _state = "Used";
+            ItemManager.Instance.OvenStateUpdate();
+        } 
+    }
+
+    //      Helper functions & animation        //
+    
     public float shrinkDuration = 1.0f;
     private IEnumerator ShrinkToZero()
     {
