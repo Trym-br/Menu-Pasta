@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class ItemController : MonoBehaviour
 {
-    private Animator _animator;
-    private SpriteRenderer _spriteRenderer;
+    public Animator _animator;
+    public SpriteRenderer _spriteRenderer;
+    private BoxCollider2D _boxCollider2D;
     [SerializeField] private AnimationCurve shrinkCurve;
     public string _incurrentSceneName;
+    
+    [SerializeField] private AnimationClip _putInPotClip;
     
     public string _state = "Unobtained";
     // Unobtained: in original location
@@ -21,14 +24,17 @@ public class ItemController : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _boxCollider2D = GetComponent<BoxCollider2D>();
     }
 
     private void OnMouseDrag()
     {
         // _state == Obtained, unobtained is just for debug
-        if (draggable && _state == "Unobtained")
+        if (draggable && _state == "Obtained")
         {
-            this.transform.position = GetMouseWorldPosition();
+            // preserve z of editor
+            Vector3 mousePosition = GetMouseWorldPosition();
+            this.transform.position = new Vector3(mousePosition.x, mousePosition.y, this.transform.position.z);
         }
     }
 
@@ -41,25 +47,24 @@ public class ItemController : MonoBehaviour
             StartCoroutine(ShrinkToZero());
             // _animator.SetTrigger("Oven");
             // StartCoroutine(PickupAnimCallback());
-            // _state = "Obtained";
-            _incurrentSceneName = "Main";
+            Debug.Log(this.name + "moved to scene Trym 2");
+            _incurrentSceneName = "Trym 2";
         }
     }
-    IEnumerator PickupAnimCallback()
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        // Wait until the animation finishes
-        yield return new WaitForSeconds(_animator.GetCurrentAnimatorStateInfo(0).length * 0.7f);
+        Debug.Log(this.name + "entered " + other.name);
+        if (other.gameObject.CompareTag("Oven") && this.tag != "Oven")
+        {
+            _animator.SetBool("PutInPot", true);
+            _state = "Used";
+            ItemManager.Instance.OvenStateUpdate();
+        } 
     }
 
-    IEnumerator PickupAnimation()
-    {
-        // Debug.Log("RUNNING PICKUP ANIM");
-        // _spriteRenderer.size = new Vector2(_spriteRenderer.size.x + 0.5f, _spriteRenderer.size.y + 0.5f);
-        transform.localScale = new Vector3(1.5f, 1.5f, 1);
-        yield return new WaitForSeconds(0.3f);
-        transform.localScale = new Vector3(1.0f, 1.0f, 1);
-        // _spriteRenderer.size = new Vector2(_spriteRenderer.size.x - 0.5f, _spriteRenderer.size.y - 0.5f);
-    }
+    //      Helper functions & animation        //
+    
     public float shrinkDuration = 1.0f;
     private IEnumerator ShrinkToZero()
     {
@@ -90,35 +95,11 @@ public class ItemController : MonoBehaviour
             }
             yield return null;
         }
-
-        // Ensure the scale is set to zero at the end
-        transform.localScale = Vector3.zero;
+        HideOrShow(false);
+        _state = "Obtained";
+        transform.localScale = new Vector3(1,1,1);
     }
-    private IEnumerator ShrinkToZeroOLD()
-    {
-        // Store the original scale
-        Vector3 originalScale = transform.localScale;
-
-        // Track the elapsed time
-        float elapsedTime = 0f;
-
-        // Loop over the specified shrink duration
-        while (elapsedTime < shrinkDuration)
-        {
-            // Calculate the proportion of the time passed
-            elapsedTime += Time.deltaTime;
-            float t = elapsedTime / shrinkDuration;
-
-            // Lerp between the original scale and zero based on the time proportion
-            transform.localScale = Vector3.Lerp(originalScale, Vector3.zero, t);
-
-            // Wait until the next frame
-            yield return null;
-        }
-
-        // Ensure the scale is set to zero at the end
-        transform.localScale = Vector3.zero;
-    }
+    
     // Helper function to get the mouse position in world space
     private Vector3 GetMouseWorldPosition()
     {
@@ -127,5 +108,12 @@ public class ItemController : MonoBehaviour
         Vector3 pos = Camera.main.ScreenToWorldPoint(mousePoint);
         pos.z = 0f;
         return pos;
+    }
+
+    public void HideOrShow(bool show)
+    {
+        // this.gameObject.SetActive(show);
+        _spriteRenderer.enabled = show;
+        _boxCollider2D.enabled = show;
     }
 }

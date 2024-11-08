@@ -47,7 +47,7 @@ public class ItemManager : MonoBehaviour
         // Unregister the callback to prevent memory leaks
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
-    void OnSceneLoaded (Scene scene, LoadSceneMode mode) {
+    private void OnSceneLoaded (Scene scene, LoadSceneMode mode) {
         Debug.Log("Scene loaded: " + scene.name);
         // Debug.Log("Items.length:" + items.Length);
         // Debug.Log("ItemControllers.length:" + itemControllers.Count);
@@ -57,14 +57,36 @@ public class ItemManager : MonoBehaviour
             string currentSceneName = SceneManager.GetActiveScene().name;
             if (currentSceneName == itemControllers[i]._incurrentSceneName)
             {
-                items[i].SetActive(true);
+                // items[i].SetActive(true);
+                itemControllers[i].HideOrShow(true);
                 Debug.Log(items[i].name + ": Activated");
             }
             else
             {
-                items[i].SetActive(false);
+                // items[i].SetActive(false);
+                itemControllers[i].HideOrShow(false);
                 Debug.Log(items[i].name + ": Deactivated");
             }
+        }
+    }
+
+    public void OvenStateUpdate()
+    {
+        ItemController Oven = itemControllers[0];
+        if (itemControllers[1]._state == "Used" && itemControllers[2]._state == "Used")
+        {
+            // Oven._spriteRenderer.sprite = 
+            Debug.Log("Ovenstate: Both");
+        }
+        else if (itemControllers[1]._state == "Used" && itemControllers[2]._state != "Used")
+        {
+            // Oven._spriteRenderer.sprite = 
+            Debug.Log("Ovenstate: Tomat");
+        }
+        else if (itemControllers[1]._state != "Used" && itemControllers[2]._state == "Used")
+        {
+            // Oven._spriteRenderer.sprite = 
+            Debug.Log("Ovenstate: Pasta");
         }
     }
 }
