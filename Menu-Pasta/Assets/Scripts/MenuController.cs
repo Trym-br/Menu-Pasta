@@ -26,11 +26,14 @@ public class MenuController : MonoBehaviour
         {
             ChangeVolume();
         }
+        /*
 
-        if (PlayerPrefs.HasKey("Language"))
+        if (PlayerPrefs.GetInt("Language") == 1 || PlayerPrefs.GetInt("Language") == 2)
         {
             languageDropdown.value = PlayerPrefs.GetInt("Language");
+            
         }
+        */
 
         _spriteRenderer = shadow.GetComponent<SpriteRenderer>();
     }
@@ -77,13 +80,12 @@ public class MenuController : MonoBehaviour
     [SerializeField] private TMP_Dropdown languageDropdown;
     private string _languageString;
     private int _pickedLanguage;
-    private int _language;
     
     public void ChangeLanguage()
     {
         _pickedLanguage = languageDropdown.value;
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[_pickedLanguage];
-        PlayerPrefs.SetInt("Language", _pickedLanguage);
+        //PlayerPrefs.SetInt("Language", _pickedLanguage);
         LoadScene();
         
         
@@ -95,16 +97,21 @@ public class MenuController : MonoBehaviour
         {
             SceneManager.LoadScene("Tesco");
         }
-        
         else if (_pickedLanguage == 1)
         {
             SceneManager.LoadScene("Main");
         }
         
-        else if (_pickedLanguage == 3)
+        /*
+        else if (_pickedLanguage == 2)
+        {
+            SceneManager.LoadScene("Main");
+        }*/
+         
+        else if (_pickedLanguage == 2)
         { SceneManager.LoadScene("Mexico");}
         
-        else if (_pickedLanguage == 4)
+        else if (_pickedLanguage == 3)
         { SceneManager.LoadScene("Ikea");}
     }
     

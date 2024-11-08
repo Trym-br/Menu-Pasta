@@ -243,10 +243,6 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3514353957600314015, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4830201680947042990, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -263,17 +259,13 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1509265647}
-    - target: {fileID: 5896469373260076539, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6718229346291391544, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: shadow
       value: 
       objectReference: {fileID: 2066644093}
     - target: {fileID: 6858213817156254209, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 265.0029
+      value: 265.00302
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
