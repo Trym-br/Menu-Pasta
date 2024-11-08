@@ -11,11 +11,19 @@ using UnityEngine.Audio;
 
 public class MenuController : MonoBehaviour
 {
+    [Header("Test")]
     private int _language;
     public GameObject dropdown;
 
     public GameObject menu;
     private SpriteRenderer _spriteRenderer;
+
+    private AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     
     private void Start()
     {
@@ -48,11 +56,13 @@ public class MenuController : MonoBehaviour
 
     public void OpenMenu()
     {
+        audioManager.PlaySFX(audioManager.click);
         menu.SetActive(true);
     }
 
     public void CloseMenu()
     {
+        audioManager.PlaySFX(audioManager.click);
         menu.SetActive(false);
     }
     

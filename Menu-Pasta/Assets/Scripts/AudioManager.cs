@@ -22,7 +22,7 @@ public class AudioManager : MonoBehaviour
 
         if (sceneName == "Main")
         {
-        ambienceSource.clip = tescoBackground;
+        ambienceSource.clip = mainBackground;
         }
         else if (sceneName == "Tesco")
         {
