@@ -15,7 +15,7 @@ public class MenuController : MonoBehaviour
     {
         _audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
-    
+
     private void Start()
     {
         if (PlayerPrefs.HasKey("MasterVolume")) //beholder volumvalg fra tidligere scener
@@ -40,13 +40,12 @@ public class MenuController : MonoBehaviour
         if (PlayerPrefs.GetInt("Language") == 1 || PlayerPrefs.GetInt("Language") == 2)
         {
             languageDropdown.value = PlayerPrefs.GetInt("Language");
-            
+
         }
         */
     }
-    
-    [Header("Menu Objects")]
-    public GameObject dropdown;
+
+    [Header("Menu Objects")] public GameObject dropdown;
     public GameObject menu;
 
     void Update()
@@ -74,7 +73,7 @@ public class MenuController : MonoBehaviour
         ItemManager.Instance._menuOpen = false;
         menu.SetActive(false);
     }
-    
+
     public void QuitGame()
     {
 #if UNITY_EDITOR
@@ -83,13 +82,13 @@ public class MenuController : MonoBehaviour
         Application.Quit()
 #endif
     }
-    
-    [Header("Language Settings")]
-    
-    [SerializeField] private TMP_Dropdown languageDropdown;
+
+    [Header("Language Settings")] [SerializeField]
+    private TMP_Dropdown languageDropdown;
+
     private string _languageString;
     private int _pickedLanguage;
-    
+
     public void ChangeLanguage()
     {
         _pickedLanguage = languageDropdown.value;
@@ -108,48 +107,56 @@ public class MenuController : MonoBehaviour
         {
             SceneManager.LoadScene("Main");
         }
-        
         /*
         else if (_pickedLanguage == 2)
         {
             SceneManager.LoadScene("Main");
         }*/
-         
+
         else if (_pickedLanguage == 2)
-        { SceneManager.LoadScene("Mexico");}
-        
+        {
+            SceneManager.LoadScene("Mexico");
+        }
+
         else if (_pickedLanguage == 3)
-        { SceneManager.LoadScene("Ikea");}
+        {
+            SceneManager.LoadScene("Ikea");
+        }
     }
-    
-    [Header("Brightness Settings")]
-    public Slider brightnessSlider;
+
+    [Header("Brightness Settings")] public Slider brightnessSlider;
     public GameObject shadow;
     public Light2D ovenLight;
     public Light2D globalLight;
-    private bool _ovenInMain;
+    private bool _ovenInMain = true;
     private bool _cookingPasta;
 
     public void ChangeBrightness()
     {
         float brightness = brightnessSlider.value;
-        globalLight.intensity = brightness;
+        if (brightness < 1f) { globalLight.intensity = brightness; }
+        else { globalLight.intensity = 1f; }
         PlayerPrefs.SetFloat("Brightness", brightness);
         
         if (_ovenInMain)
         {
-            ovenLight.intensity = brightness;
-            if (brightness > 1.2f && !_cookingPasta)
+            if (brightness > 1f && !_cookingPasta)
             {
+                ovenLight.intensity = brightness * 9;
                 //kjør "kok pasta" her.
                 print("cooking pasta!");
                 _cookingPasta = true;
             }
+            else
+            {
+                ovenLight.intensity = 0;
+            }
         }
     }
 
-    [Header("Audio Settings")]
-    [SerializeField] private AudioMixer audioMixer;
+    [Header("Audio Settings")] [SerializeField]
+    private AudioMixer audioMixer;
+
     [SerializeField] private Slider volumeSlider;
 
     public void ChangeVolume()
