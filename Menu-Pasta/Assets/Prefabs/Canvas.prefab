@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e95669bf6a585fc45a09a2cd0e974628, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1012c731a145d7e46ab60eae285ba745, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -123,6 +123,18 @@ MonoBehaviour:
       - m_Target: {fileID: 6718229346291391544}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: OpenMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: sfxTest
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -253,6 +265,8 @@ MonoBehaviour:
   languageDropdown: {fileID: 209489136667731714}
   brightnessSlider: {fileID: 3823244704659767284}
   shadow: {fileID: 0}
+  audioMixer: {fileID: 24100000, guid: eaf4f59cd117bc14382af284caf55a4d, type: 2}
+  volumeSlider: {fileID: 4979121922614256713}
 --- !u!1001 &7660215152333388015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -553,6 +567,42 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 0a4418d0426e6f94080e9b49c9cd0133, type: 3}
+    - target: {fileID: 3411450442787134630, guid: d482718cf20569c4dad42f71d4ad4fa3, type: 3}
+      propertyPath: m_MaxValue
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3411450442787134630, guid: d482718cf20569c4dad42f71d4ad4fa3, type: 3}
+      propertyPath: m_MinValue
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3411450442787134630, guid: d482718cf20569c4dad42f71d4ad4fa3, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3411450442787134630, guid: d482718cf20569c4dad42f71d4ad4fa3, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3411450442787134630, guid: d482718cf20569c4dad42f71d4ad4fa3, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6718229346291391544}
+    - target: {fileID: 3411450442787134630, guid: d482718cf20569c4dad42f71d4ad4fa3, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3411450442787134630, guid: d482718cf20569c4dad42f71d4ad4fa3, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 3411450442787134630, guid: d482718cf20569c4dad42f71d4ad4fa3, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3411450442787134630, guid: d482718cf20569c4dad42f71d4ad4fa3, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3658840900369432632, guid: d482718cf20569c4dad42f71d4ad4fa3, type: 3}
       propertyPath: m_fontSize
       value: 48
@@ -591,7 +641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3847138654592123630, guid: d482718cf20569c4dad42f71d4ad4fa3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 265.0024
+      value: 265.00235
       objectReference: {fileID: 0}
     - target: {fileID: 3976048182296157182, guid: d482718cf20569c4dad42f71d4ad4fa3, type: 3}
       propertyPath: m_SizeDelta.y
@@ -787,7 +837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6519952272367348400, guid: d482718cf20569c4dad42f71d4ad4fa3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 6.9799957
+      value: 6.9799805
       objectReference: {fileID: 0}
     - target: {fileID: 6519952272367348400, guid: d482718cf20569c4dad42f71d4ad4fa3, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -1068,3 +1118,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2963807032039218258, guid: d482718cf20569c4dad42f71d4ad4fa3, type: 3}
   m_PrefabInstance: {fileID: 7660215152333388015}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4979121922614256713 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3411450442787134630, guid: d482718cf20569c4dad42f71d4ad4fa3, type: 3}
+  m_PrefabInstance: {fileID: 7660215152333388015}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

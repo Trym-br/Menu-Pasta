@@ -6,6 +6,8 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
+
 
 public class MenuController : MonoBehaviour
 {
@@ -14,9 +16,18 @@ public class MenuController : MonoBehaviour
 
     public GameObject menu;
     private SpriteRenderer _spriteRenderer;
-
+    
     private void Start()
     {
+        if (PlayerPrefs.HasKey("MasterVolume")) //beholder volumet fra andre scener
+        {
+            LoadVolume();
+        }
+        else
+        {
+            ChangeVolume();
+        }
+
         _spriteRenderer = shadow.GetComponent<SpriteRenderer>();
     }
     
@@ -77,7 +88,9 @@ public class MenuController : MonoBehaviour
         }
         
         else if (_pickedLanguage == 1)
-        { SceneManager.LoadScene("Main"); }
+        {
+            SceneManager.LoadScene("Main");
+        }
         
         else if (_pickedLanguage == 2)
         { SceneManager.LoadScene("Mexico");}
@@ -94,12 +107,24 @@ public class MenuController : MonoBehaviour
 
     public void ChangeBrightness()
     {
-        print("changed Brightness to"+ brightnessSlider.value);
         float brightness = 1 - brightnessSlider.value;
         _spriteRenderer.color = new Color(0, 0, 0, brightness);
     }
     
+    //volume
+    [SerializeField] private AudioMixer audioMixer;
+    [SerializeField] private Slider volumeSlider;
 
+    public void ChangeVolume()
+    {
+        float volume = volumeSlider.value;
+        audioMixer.SetFloat("MasterVolume", volume);
+        PlayerPrefs.SetFloat("MasterVolume", volume);
+    }
 
-
+    private void LoadVolume()
+    {
+        volumeSlider.value = PlayerPrefs.GetFloat("MasterVolume");
+        ChangeVolume();
+    }
 }
