@@ -4,11 +4,11 @@ using TMPro;
 using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+using UnityEngine.Rendering.Universal;
 
 
 public class MenuController : MonoBehaviour
 {
-    private SpriteRenderer _spriteRenderer;
     private AudioManager _audioManager;
 
     private void Awake()
@@ -26,6 +26,15 @@ public class MenuController : MonoBehaviour
         {
             ChangeVolume();
         }
+
+        if (PlayerPrefs.HasKey("Brightness"))
+        {
+            LoadBrightness();
+        }
+        else
+        {
+            ChangeBrightness();
+        }
         /*
 
         if (PlayerPrefs.GetInt("Language") == 1 || PlayerPrefs.GetInt("Language") == 2)
@@ -34,8 +43,6 @@ public class MenuController : MonoBehaviour
             
         }
         */
-
-        _spriteRenderer = shadow.GetComponent<SpriteRenderer>();
     }
     
     [Header("Menu Objects")]
@@ -87,8 +94,6 @@ public class MenuController : MonoBehaviour
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[_pickedLanguage];
         //PlayerPrefs.SetInt("Language", _pickedLanguage);
         LoadScene();
-        
-        
     }
 
     private void LoadScene()
@@ -109,22 +114,38 @@ public class MenuController : MonoBehaviour
         }*/
          
         else if (_pickedLanguage == 2)
-        { SceneManager.LoadScene("Mexico");}
+        { SceneManager.LoadScene("Ikea");}
         
         else if (_pickedLanguage == 3)
-        { SceneManager.LoadScene("Ikea");}
+        { SceneManager.LoadScene("Mexico");}
     }
     
     [Header("Brightness Settings")]
     public Slider brightnessSlider;
     public GameObject shadow;
+    public Light2D ovenLight;
+    public Light2D globalLight;
+    private bool _ovenInMain;
+    private bool _cookingPasta;
 
     public void ChangeBrightness()
     {
-        float brightness = 1 - brightnessSlider.value;
-        _spriteRenderer.color = new Color(0, 0, 0, brightness); //endrer opacity på skyggeboksen
+        float brightness = brightnessSlider.value;
+        globalLight.intensity = brightness;
+        PlayerPrefs.SetFloat("Brightness", brightness);
+        
+        if (_ovenInMain)
+        {
+            ovenLight.intensity = brightness;
+            if (brightness > 1.2f && !_cookingPasta)
+            {
+                //kjør "kok pasta" her.
+                print("cooking pasta!");
+                _cookingPasta = true;
+            }
+        }
     }
-    
+
     [Header("Audio Settings")]
     [SerializeField] private AudioMixer audioMixer;
     [SerializeField] private Slider volumeSlider;
@@ -140,5 +161,10 @@ public class MenuController : MonoBehaviour
     {
         volumeSlider.value = PlayerPrefs.GetFloat("MasterVolume");
         ChangeVolume();
+    }
+
+    private void LoadBrightness()
+    {
+        brightnessSlider.value = PlayerPrefs.GetFloat("Brightness");
     }
 }

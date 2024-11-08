@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VictoryScreen.unity
     guid: dbae159b9593ed44b9af5e261dcec224
+  - enabled: 1
+    path: Assets/Scenes/MayaTester.unity
+    guid: 9495787b6c4a53e4ea37a1345fc60323
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 2c575c552df62b149828bf81e2214c88, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
