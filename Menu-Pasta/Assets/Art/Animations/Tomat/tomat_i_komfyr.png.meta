@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tomat_i_komfyr_0: 4222337837241721953
+      tomat_i_komfyr_1: -8520659184536588898
+      tomat_i_komfyr_2: -2674845116284562933
+      tomat_i_komfyr_3: -6436262727996271456
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
