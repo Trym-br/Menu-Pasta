@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e43d3f5955b622b4392e550dfab0a2b7
+guid: 133ca0c7a44e2c64aaea85bc1ecfd4a2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5421938557777384561
-    second: Pasta_Asset_0
+      213: -9133187734012142362
+    second: ikea kitchen without oven V2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pasta_Asset_0
+      name: ikea kitchen without oven V2_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 6
-        width: 32
-        height: 39
+        x: 0
+        y: 0
+        width: 480
+        height: 270
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 174905244689e3b40800000000000000
-      internalID: 5421938557777384561
+      spriteID: 6ec50474526604180800000000000000
+      internalID: -9133187734012142362
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pasta_Asset_0: 5421938557777384561
+      ikea kitchen without oven V2_0: -9133187734012142362
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

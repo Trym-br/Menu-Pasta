@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 2178429064464365862}
   - component: {fileID: 1130073271734551002}
   - component: {fileID: 8792032416109061229}
+  - component: {fileID: -2602540318654003124}
   - component: {fileID: 9202135839558687443}
   - component: {fileID: 6463807315691466576}
   - component: {fileID: 3199646486416700699}
   m_Layer: 0
-  m_Name: Oven
-  m_TagString: Oven
+  m_Name: Kjele
+  m_TagString: Kjele
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 7127728195541354359}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: -1.77, z: 1}
+  m_LocalPosition: {x: 0, y: -0.4, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79,8 +80,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
-  m_Sprite: {fileID: -7072883587210774579, guid: f5a730ca0b9401649b5ac193d69d453c, type: 3}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -6860088547998430970, guid: 790114e67542d8441a4c9292c0ffc410, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,7 +102,7 @@ Animator:
   m_GameObject: {fileID: 7127728195541354359}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 53fba73156543ad438a25dc32fa7b703, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -113,6 +114,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!111 &-2602540318654003124
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7127728195541354359}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!61 &9202135839558687443
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -149,15 +166,15 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.033333335, y: 0, z: 0.033333335, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.8, y: 2.6666667}
+    oldSize: {x: 2.1333334, y: 1.0666667}
     newSize: {x: 9.18, y: 5.15}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.9, y: 2.8}
+  m_Size: {x: 2.1, y: 1.1}
   m_EdgeRadius: 0
 --- !u!50 &6463807315691466576
 Rigidbody2D:
@@ -199,6 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 8792032416109061229}
+  _animation: {fileID: 0}
   _spriteRenderer: {fileID: 1130073271734551002}
   shrinkCurve:
     serializedVersion: 2
@@ -252,8 +270,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _boxCollider2D: {fileID: 9202135839558687443}
-  _incurrentSceneName: Ikea
+  _incurrentSceneName: NULL
   _state: Unobtained
-  mainScenePos: {x: 0, y: -1.77}
+  mainScenePos: {x: 0, y: -0.45}
   draggable: 0
   shrinkDuration: 2

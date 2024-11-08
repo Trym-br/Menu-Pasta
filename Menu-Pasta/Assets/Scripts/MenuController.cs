@@ -64,12 +64,14 @@ public class MenuController : MonoBehaviour
     public void OpenMenu()
     {
         _audioManager.PlaySFX(_audioManager.click);
+        ItemManager.Instance._menuOpen = true;
         menu.SetActive(true);
     }
 
     public void CloseMenu()
     {
         _audioManager.PlaySFX(_audioManager.click);
+        ItemManager.Instance._menuOpen = false;
         menu.SetActive(false);
     }
     

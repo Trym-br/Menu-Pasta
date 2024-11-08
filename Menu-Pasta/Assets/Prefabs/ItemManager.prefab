@@ -48,5 +48,7 @@ MonoBehaviour:
   - {fileID: 7127728195541354359, guid: 98aa69e3cbca4b842888bb46b0987cf0, type: 3}
   - {fileID: 5827104604574148270, guid: b79e5701a69085340b144b6d515d30ab, type: 3}
   - {fileID: 1047578607346635510, guid: 2c70096e977974f4b84c12cd1f9ee28c, type: 3}
+  - {fileID: 7127728195541354359, guid: de3213cc24ae8b6428643aa68fe7c4e4, type: 3}
   backgrounds:
-  - {fileID: -754710277215877187, guid: 101fab1123d4d664daa55173a4163293, type: 3}
+  - {fileID: -9133187734012142362, guid: 133ca0c7a44e2c64aaea85bc1ecfd4a2, type: 3}
+  - {fileID: 2057206587610338786, guid: 816ee1b42c864b941981392fdbfa253a, type: 3}

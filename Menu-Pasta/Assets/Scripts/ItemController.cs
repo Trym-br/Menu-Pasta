@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class ItemController : MonoBehaviour
 {
     public Animator _animator;
+    public Animation _animation;
     public SpriteRenderer _spriteRenderer;
     [SerializeField] private AnimationCurve shrinkCurve;
     
@@ -15,6 +16,8 @@ public class ItemController : MonoBehaviour
     public string _incurrentSceneName;
     
     public string _state = "Unobtained";
+
+    public Vector2 mainScenePos;
     // Unobtained: in original location
     // Obtained: in hub
     // Used: in oven
@@ -24,6 +27,7 @@ public class ItemController : MonoBehaviour
     private void Start()
     {
         _animator = GetComponent<Animator>();
+        _animation = GetComponent<Animation>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _boxCollider2D = GetComponent<BoxCollider2D>();
     }
@@ -41,14 +45,15 @@ public class ItemController : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (_state == "Unobtained")
+        if (_state == "Unobtained" && !ItemManager.Instance._menuOpen)
         {
             Debug.Log("Clicked on " + this.name);
             // StartCoroutine(PickupAnimation());
             StartCoroutine(ShrinkToZero());
+            // State set to obtain in this function ^
             // _animator.SetTrigger("Oven");
             // StartCoroutine(PickupAnimCallback());
-            Debug.Log(this.name + "moved to scene Trym 2");
+            Debug.Log(this.name + "moved to scene Main");
             _incurrentSceneName = "Main";
             ItemManager.Instance.UpdateBackground(this.tag);
         }
@@ -58,12 +63,11 @@ public class ItemController : MonoBehaviour
     {
         Debug.Log(this.name + "entered " + other.name);
         Debug.Log("tags of collision: " + other.gameObject.tag + " / " + this.tag);
-        if (other.gameObject.CompareTag("Oven") && this.tag != "Oven" && _state == "Obtained")
+        if (other.gameObject.CompareTag("Kjele") && !this.CompareTag("Oven") && !this.CompareTag("Kjele") && _state == "Obtained")
         {
             Debug.Log(this.name + ": put in oven");
-            _animator.SetBool("PutInPot", true);
             _state = "Used";
-            ItemManager.Instance.OvenStateUpdate();
+            ItemManager.Instance.OvenStateUpdate(this.tag);
         } 
     }
 
@@ -102,6 +106,7 @@ public class ItemController : MonoBehaviour
         HideOrShow(false);
         _state = "Obtained";
         transform.localScale = new Vector3(1,1,1);
+        transform.position = mainScenePos;
     }
     
     // Helper function to get the mouse position in world space

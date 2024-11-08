@@ -6,8 +6,10 @@ using System.Collections.Generic;
 public class ItemManager : MonoBehaviour
 {
     public static ItemManager Instance { get; private set; }
+    public bool _menuOpen = true;
     public GameObject[] items;
     public Sprite[] backgrounds;
+    public AnimationClip[] KjeleAnimations;
     private List<ItemController> itemControllers = new List<ItemController>();
 
     private void Awake()
@@ -71,24 +73,32 @@ public class ItemManager : MonoBehaviour
         }
     }
 
-    public void OvenStateUpdate()
+    public void OvenStateUpdate(string tag)
     {
-        ItemController Oven = itemControllers[0];
-        if (itemControllers[1]._state == "Used" && itemControllers[2]._state == "Used")
+        ItemController Kjele = itemControllers[3];
+        // Ovn Pasta Tomat Kjele
+        // if (itemControllers[1]._state == "Used" && itemControllers[2]._state != "Used")
+        if (tag == "Tomat")
         {
-            // Oven._spriteRenderer.sprite = 
-            Debug.Log("Ovenstate: Both");
-        }
-        else if (itemControllers[1]._state == "Used" && itemControllers[2]._state != "Used")
-        {
-            // Oven._spriteRenderer.sprite = 
+            // Pasta ikkje Tomat
+            itemControllers[2].HideOrShow(false);
+            Kjele._animator.SetTrigger("Tomatfall");
             Debug.Log("Ovenstate: Tomat");
         }
-        else if (itemControllers[1]._state != "Used" && itemControllers[2]._state == "Used")
+        // else if (itemControllers[1]._state != "Used" && itemControllers[2]._state == "Used")
+        else if (tag == "Pasta")
         {
-            // Oven._spriteRenderer.sprite = 
+            // Tomat ikkje Pasta
+            itemControllers[1].HideOrShow(false);
+            Kjele._animator.SetTrigger("Pastafall");
             Debug.Log("Ovenstate: Pasta");
         }
+        // if (itemControllers[1]._state == "Used" && itemControllers[2]._state == "Used")
+        // {
+        //     // Pasta Og Tomat
+        //     // Oven._spriteRenderer.sprite = 
+        //     Debug.Log("Ovenstate: Both/Stir");
+        // }
     }
     public void UpdateBackground(string itemtag)
     {
@@ -97,6 +107,7 @@ public class ItemManager : MonoBehaviour
         {
             case "Oven": 
                 background.GetComponent<SpriteRenderer>().sprite = backgrounds[0];
+                itemControllers[3]._incurrentSceneName = "Main";
                 break;
             case "Tomat": 
                 background.GetComponent<SpriteRenderer>().sprite = backgrounds[1];

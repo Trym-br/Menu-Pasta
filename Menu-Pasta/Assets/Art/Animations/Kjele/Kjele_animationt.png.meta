@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: e7f73333025a3a44bb09d5680faf5108
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4731854019396448564
+    second: Kjele_animationt_0
+  - first:
+      213: -7357290728886261337
+    second: Kjele_animationt_1
+  - first:
+      213: -5448060026832389027
+    second: Kjele_animationt_2
+  - first:
+      213: 2244495260936066401
+    second: Kjele_animationt_3
+  - first:
+      213: 7636331006119823499
+    second: Kjele_animationt_4
+  - first:
+      213: 6421456493711625915
+    second: Kjele_animationt_5
+  - first:
+      213: 2889299613473251852
+    second: Kjele_animationt_6
+  - first:
+      213: -4258540590514690917
+    second: Kjele_animationt_7
+  - first:
+      213: -4481495495546331102
+    second: Kjele_animationt_8
+  - first:
+      213: -8407173066756695198
+    second: Kjele_animationt_9
+  - first:
+      213: 6598815537836533872
+    second: Kjele_animationt_10
+  - first:
+      213: -7947314906001189541
+    second: Kjele_animationt_11
+  - first:
+      213: 3013326227872286656
+    second: Kjele_animationt_12
+  - first:
+      213: -5370981710058073974
+    second: Kjele_animationt_13
+  - first:
+      213: -1431022713083213681
+    second: Kjele_animationt_14
+  - first:
+      213: 1666273176215077662
+    second: Kjele_animationt_15
+  - first:
+      213: -2520629087840041251
+    second: Kjele_animationt_16
+  - first:
+      213: 1165421734911708450
+    second: Kjele_animationt_17
+  - first:
+      213: 528335873715909261
+    second: Kjele_animationt_18
+  - first:
+      213: 316997323486379370
+    second: Kjele_animationt_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kjele_animationt_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 387
+        width: 48
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccecedcf6d3155eb0800000000000000
+      internalID: -4731854019396448564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kjele_animationt_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 387
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a9a57b0017a5e990800000000000000
+      internalID: -7357290728886261337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kjele_animationt_2
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 387
+        width: 44
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c76a9454a9464b0800000000000000
+      internalID: -5448060026832389027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kjele_animationt_3
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 367
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16554284c8c062f10800000000000000
+      internalID: 2244495260936066401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kjele_animationt_4
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 271
+        width: 30
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b88c21f4792b9f960800000000000000
+      internalID: 7636331006119823499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kjele_animationt_5
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 270
+        width: 48
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe8e40a8a89d1950800000000000000
+      internalID: 6421456493711625915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kjele_animationt_6
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 277
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c022fb6b0bad81820800000000000000
+      internalID: 2889299613473251852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kjele_animationt_7
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 271
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b942ac845ef96e4c0800000000000000
+      internalID: -4258540590514690917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kjele_animationt_8
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 280
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 220a27d37978ec1c0800000000000000
+      internalID: -4481495495546331102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kjele_animationt_9
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 273
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b5cbe83a8b35b80800000000000000
+      internalID: -8407173066756695198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kjele_animationt_10
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 270
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 078231705c3b39b50800000000000000
+      internalID: 6598815537836533872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kjele_animationt_11
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 270
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b55d1ad133775b190800000000000000
+      internalID: -7947314906001189541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kjele_animationt_12
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 135
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c702bc2d3c71d920800000000000000
+      internalID: 3013326227872286656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kjele_animationt_13
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 135
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a805ed467907675b0800000000000000
+      internalID: -5370981710058073974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kjele_animationt_14
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 135
+        width: 64
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f88c821ac6cf32ce0800000000000000
+      internalID: -1431022713083213681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kjele_animationt_15
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 135
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e13cf0f10aacf1710800000000000000
+      internalID: 1666273176215077662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kjele_animationt_16
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 19
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd607c0133de40dd0800000000000000
+      internalID: -2520629087840041251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kjele_animationt_17
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 19
+        width: 64
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d8eeaa4e86c2010800000000000000
+      internalID: 1165421734911708450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kjele_animationt_18
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 19
+        width: 64
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82beea8da6055700800000000000000
+      internalID: 528335873715909261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kjele_animationt_19
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 19
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6db72dd263366400800000000000000
+      internalID: 316997323486379370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Kjele_animationt_0: -4731854019396448564
+      Kjele_animationt_1: -7357290728886261337
+      Kjele_animationt_10: 6598815537836533872
+      Kjele_animationt_11: -7947314906001189541
+      Kjele_animationt_12: 3013326227872286656
+      Kjele_animationt_13: -5370981710058073974
+      Kjele_animationt_14: -1431022713083213681
+      Kjele_animationt_15: 1666273176215077662
+      Kjele_animationt_16: -2520629087840041251
+      Kjele_animationt_17: 1165421734911708450
+      Kjele_animationt_18: 528335873715909261
+      Kjele_animationt_19: 316997323486379370
+      Kjele_animationt_2: -5448060026832389027
+      Kjele_animationt_3: 2244495260936066401
+      Kjele_animationt_4: 7636331006119823499
+      Kjele_animationt_5: 6421456493711625915
+      Kjele_animationt_6: 2889299613473251852
+      Kjele_animationt_7: -4258540590514690917
+      Kjele_animationt_8: -4481495495546331102
+      Kjele_animationt_9: -8407173066756695198
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
