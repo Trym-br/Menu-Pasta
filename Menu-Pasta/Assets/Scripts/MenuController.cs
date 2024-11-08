@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -79,7 +80,7 @@ public class MenuController : MonoBehaviour
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
-        Application.Quit()
+        Application.Quit();
 #endif
     }
 
@@ -129,7 +130,7 @@ public class MenuController : MonoBehaviour
     public Light2D ovenLight;
     public Light2D globalLight;
     private bool _ovenInMain = true;
-    private bool _cookingPasta;
+    // private bool _cookingPasta;
 
     public void ChangeBrightness()
     {
@@ -138,18 +139,24 @@ public class MenuController : MonoBehaviour
         else { globalLight.intensity = 1f; }
         PlayerPrefs.SetFloat("Brightness", brightness);
         
-        if (_ovenInMain)
+        // if (_ovenInMain)
+        if(ItemManager.Instance.itemControllers[0]._state == "Obtained")
         {
-            if (brightness > 1f && !_cookingPasta)
+            // if (brightness > 1f && !_cookingPasta)
+            if (SceneManager.GetActiveScene().name == "Main")
             {
-                ovenLight.intensity = brightness * 9;
-                //kjør "kok pasta" her.
-                print("cooking pasta!");
-                _cookingPasta = true;
-            }
-            else
-            {
-                ovenLight.intensity = 0;
+                if (brightness > 1f)
+                {
+                    ovenLight.intensity = brightness * 3;
+                    //kjør "kok pasta" her.
+                    print("cooking pasta!");
+                    // _cookingPasta = true;
+                    ItemManager.Instance.OvenStateUpdate(this.tag);
+                }
+                else
+                {
+                    ovenLight.intensity = 0;
+                }
             }
         }
     }

@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,7 +11,7 @@ public class ItemManager : MonoBehaviour
     public GameObject[] items;
     public Sprite[] backgrounds;
     public AnimationClip[] KjeleAnimations;
-    private List<ItemController> itemControllers = new List<ItemController>();
+    public List<ItemController> itemControllers = new List<ItemController>();
 
     private void Awake()
     {
@@ -93,12 +94,30 @@ public class ItemManager : MonoBehaviour
             Kjele._animator.SetTrigger("Pastafall");
             Debug.Log("Ovenstate: Pasta");
         }
+        else if (tag == "Menu" && itemControllers[2]._state == "Used" && itemControllers[1]._state == "Used")
+        { 
+            Kjele._animator.SetTrigger("Røre");
+            Debug.Log("Kjele Rør");
+            StartCoroutine(EndingSequence());
+        }
         // if (itemControllers[1]._state == "Used" && itemControllers[2]._state == "Used")
         // {
         //     // Pasta Og Tomat
         //     // Oven._spriteRenderer.sprite = 
         //     Debug.Log("Ovenstate: Both/Stir");
         // }
+    }
+
+    private IEnumerator EndingSequence()
+    {
+        yield return new WaitUntil(() => ItemManager.Instance._menuOpen == false);
+        yield return new WaitForSeconds(4f);
+        ItemController Kjele = itemControllers[3];
+        Debug.Log("Kjele Stop");
+        Kjele._animator.SetTrigger("Finito");
+        yield return new WaitForSeconds(0.1f);
+        Debug.Log("Kjele WIN");
+        SceneManager.LoadScene("VictoryScreen");
     }
     public void UpdateBackground(string itemtag)
     {

@@ -9,6 +9,7 @@ TagManager:
   - Tomat
   - Pasta
   - Kjele
+  - Menu
   layers:
   - Default
   - TransparentFX

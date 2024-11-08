@@ -199,6 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 3655372563731093214}
+  _animation: {fileID: 0}
   _spriteRenderer: {fileID: 5914417442897898926}
   shrinkCurve:
     serializedVersion: 2
