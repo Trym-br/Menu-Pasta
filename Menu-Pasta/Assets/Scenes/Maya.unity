@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 522517781}
   - component: {fileID: 522517780}
   m_Layer: 0
-  m_Name: Oven Light
+  m_Name: OvenLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
