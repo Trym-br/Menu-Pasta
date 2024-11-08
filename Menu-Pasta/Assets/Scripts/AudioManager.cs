@@ -20,7 +20,7 @@ public class AudioManager : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene ();
         string sceneName = currentScene.name;
 
-        if (sceneName == "Main" || sceneName == "Maya")
+        if (sceneName == "Main")
         {
         ambienceSource.clip = tescoBackground;
         }
