@@ -18,6 +18,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip tomatoDrop;
     public AudioClip pastaDrop;
     public AudioClip waterBoiling;
+    public AudioClip victory;
 
     private void Start()
     {

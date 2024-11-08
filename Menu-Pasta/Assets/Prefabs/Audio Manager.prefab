@@ -56,6 +56,7 @@ MonoBehaviour:
   tomatoDrop: {fileID: 8300000, guid: 2dbe48940ea79814985802d20e15511f, type: 3}
   pastaDrop: {fileID: 8300000, guid: 0ef2f6f9ea6e3b243aa8c8308ee6bd36, type: 3}
   waterBoiling: {fileID: 8300000, guid: ddcb726a2c2620548b122013511fba4f, type: 3}
+  victory: {fileID: 8300000, guid: c63d6f5a9194369429ee0fa18147e2c5, type: 3}
 --- !u!1 &6337556991880294969
 GameObject:
   m_ObjectHideFlags: 0

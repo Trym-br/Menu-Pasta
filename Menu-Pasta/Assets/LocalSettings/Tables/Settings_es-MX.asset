@@ -62,6 +62,14 @@ MonoBehaviour:
     m_Localized: Sueco
     m_Metadata:
       m_Items: []
+  - m_Id: 683952796491776
+    m_Localized: "\xA1Hiciste pasta!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 684876243820544
+    m_Localized: Jugar de nuevo
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
