@@ -271,7 +271,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   _boxCollider2D: {fileID: 9202135839558687443}
   _incurrentSceneName: NULL
-  _state: Unobtained
+  _state: Obtained
   mainScenePos: {x: 0, y: -0.45}
   draggable: 0
   shrinkDuration: 2
