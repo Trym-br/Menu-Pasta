@@ -512,7 +512,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: La oss lage pasta!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e980cd57056bbf84e9cc870519dd50fb, type: 2}
   m_sharedMaterial: {fileID: 5492873481635104890, guid: e980cd57056bbf84e9cc870519dd50fb, type: 2}
@@ -1010,6 +1010,14 @@ PrefabInstance:
       propertyPath: m_Options.m_Options.Array.data[3].m_Image
       value: 
       objectReference: {fileID: 21300000, guid: 1363176ccd9d8464bada378c094e1636, type: 3}
+    - target: {fileID: 1265419846050215200, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_text
+      value: Fortsett
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265419846050215200, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4280697772
+      objectReference: {fileID: 0}
     - target: {fileID: 2029217151994081846, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.71428573
@@ -1017,6 +1025,10 @@ PrefabInstance:
     - target: {fileID: 2029217151994081846, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2029217151994081846, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -63.785706
       objectReference: {fileID: 0}
     - target: {fileID: 2321928328404857040, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_Pivot.x
@@ -1110,6 +1122,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0.70000005
       objectReference: {fileID: 0}
+    - target: {fileID: 2795888692181731547, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 96.16002
+      objectReference: {fileID: 0}
     - target: {fileID: 2821606525745312612, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1126,6 +1142,26 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0.71428573
       objectReference: {fileID: 0}
+    - target: {fileID: 3473694869641335391, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 106.40857
+      objectReference: {fileID: 0}
+    - target: {fileID: 3927399632101599306, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_text
+      value: Volum
+      objectReference: {fileID: 0}
+    - target: {fileID: 3927399632101599306, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4280697772
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996845161993071729, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_text
+      value: Avslutt
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996845161993071729, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4280697772
+      objectReference: {fileID: 0}
     - target: {fileID: 4531903197945205124, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1138,9 +1174,21 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4830201680947042990, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -66.106995
+      objectReference: {fileID: 0}
     - target: {fileID: 4921132643106272181, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_Name
       value: CanvasUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379451614999460055, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_text
+      value: Innstillinger
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379451614999460055, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4280697772
       objectReference: {fileID: 0}
     - target: {fileID: 6718229346291391544, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: shadow
@@ -1156,7 +1204,23 @@ PrefabInstance:
       objectReference: {fileID: 1450587781}
     - target: {fileID: 6858213817156254209, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 265.00275
+      value: 265.00278
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410105082000457948, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_text
+      value: Lysstyrke
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410105082000457948, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4280697772
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839390765636595634, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_text
+      value: "Spr\xE5k"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839390765636595634, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4280697772
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

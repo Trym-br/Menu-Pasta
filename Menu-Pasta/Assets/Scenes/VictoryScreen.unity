@@ -562,7 +562,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Avslutt
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e980cd57056bbf84e9cc870519dd50fb, type: 2}
   m_sharedMaterial: {fileID: 5492873481635104890, guid: e980cd57056bbf84e9cc870519dd50fb, type: 2}
@@ -1318,7 +1318,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Du lagde pasta!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e980cd57056bbf84e9cc870519dd50fb, type: 2}
   m_sharedMaterial: {fileID: 5492873481635104890, guid: e980cd57056bbf84e9cc870519dd50fb, type: 2}

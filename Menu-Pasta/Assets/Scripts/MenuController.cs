@@ -27,7 +27,7 @@ public class MenuController : MonoBehaviour
         {
             ChangeVolume();
         }
-
+        /*
         if (PlayerPrefs.HasKey("Brightness"))
         {
             LoadBrightness();
@@ -35,7 +35,7 @@ public class MenuController : MonoBehaviour
         else
         {
             ChangeBrightness();
-        }
+        }/*
         /*
 
         if (PlayerPrefs.GetInt("Language") == 1 || PlayerPrefs.GetInt("Language") == 2)
@@ -137,7 +137,7 @@ public class MenuController : MonoBehaviour
         float brightness = brightnessSlider.value;
         if (brightness < 1f) { globalLight.intensity = brightness; }
         else { globalLight.intensity = 1f; }
-        PlayerPrefs.SetFloat("Brightness", brightness);
+        //PlayerPrefs.SetFloat("Brightness", brightness);
         
         // if (_ovenInMain)
         if(ItemManager.Instance.itemControllers[0]._state == "Obtained")

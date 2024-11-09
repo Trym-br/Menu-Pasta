@@ -131,6 +131,14 @@ PrefabInstance:
       propertyPath: m_Value
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1265419846050215200, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_text
+      value: Continuar
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265419846050215200, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4280697772
+      objectReference: {fileID: 0}
     - target: {fileID: 2029217151994081846, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -259,6 +267,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3927399632101599306, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_text
+      value: Volumen
+      objectReference: {fileID: 0}
+    - target: {fileID: 3927399632101599306, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4280697772
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996845161993071729, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_text
+      value: Salir
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996845161993071729, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4280697772
+      objectReference: {fileID: 0}
     - target: {fileID: 4531903197945205124, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -279,6 +303,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasUI
       objectReference: {fileID: 0}
+    - target: {fileID: 6379451614999460055, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_text
+      value: Ajustes
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379451614999460055, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4280697772
+      objectReference: {fileID: 0}
     - target: {fileID: 6718229346291391544, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: shadow
       value: 
@@ -290,6 +322,22 @@ PrefabInstance:
     - target: {fileID: 6858213817156254209, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 265.00247
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410105082000457948, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_text
+      value: Brillo
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410105082000457948, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4280697772
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839390765636595634, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_text
+      value: Idioma
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839390765636595634, guid: a0400fd50c00b3944b0152fdd1d86a28, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4280697772
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
